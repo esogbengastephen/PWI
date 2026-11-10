@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Register your interest with Promise Wesley Initiative." />
+    <title>Register your interest — Promise Wesley Initiative</title>
+    <link rel="icon" type="image/png" href="../brand-assets/pwi-yellow-people-crown-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to registration form</a>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Primary navigation">
+        <a class="wordmark" href="index.html#top" aria-label="Promise Wesley Initiative home">
+          <span class="wordmark-mark" aria-hidden="true">PWI</span>
+          <span>Promise Wesley<br />Initiative</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#top">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#building">What we’re building</a>
+          <a href="index.html#involved">Get involved</a>
+          <a class="nav-register" href="register.html" aria-current="page">Register <span aria-hidden="true">↗</span></a>
+          <a class="nav-contact" href="index.html#contact">Contact us <span aria-hidden="true">↗</span></a>
+        </div>
+        <details class="mobile-menu">
+          <summary aria-label="Open navigation menu"><span></span><span></span></summary>
+          <div class="mobile-menu-panel">
+            <a href="index.html#top">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#building">What we’re building</a>
+            <a href="index.html#involved">Get involved</a>
+            <a href="register.html" aria-current="page">Register your interest <span aria-hidden="true">↗</span></a>
+            <a href="index.html#contact">Contact us <span aria-hidden="true">↗</span></a>
+          </div>
+        </details>
+      </nav>
+    </header>
+
+    <main id="main" class="register-shell">
+      <div class="container register-grid">
+        <section class="register-intro" aria-labelledby="register-heading">
+          <p class="eyebrow"><span></span> PWI / Register</p>
+          <h1 id="register-heading">Start with<br /><em>your next step.</em></h1>
+          <p>Tell PWI a little about yourself and the kind of opportunity you would like to explore. We are building the next steps carefully, with young people and community at the centre.</p>
+          <div class="register-detail">
+            <strong>What this is for</strong>
+            <span>Interest in future learning, guidance, volunteering, partnership, and community opportunities.</span>
+          </div>
+        </section>
+
+        <form class="contact-form registration-form" id="registration-form" novalidate>
+          <div class="form-row">
+            <div class="field"><label for="full-name">Full name <b>*</b></label><input id="full-name" name="fullName" autocomplete="name" required placeholder="Your full name" /></div>
+            <div class="field"><label for="registration-email">Email address <b>*</b></label><input id="registration-email" name="email" type="email" autocomplete="email" spellcheck="false" required placeholder="you@example.com" /></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Your phone number" /></div>
+            <div class="field"><label for="nigerian-state">State of residence <b>*</b></label><select id="nigerian-state" name="state" autocomplete="address-level1" required><option value="" selected disabled>Select your state</option><option>Abia</option><option>Adamawa</option><option>Akwa Ibom</option><option>Anambra</option><option>Bauchi</option><option>Bayelsa</option><option>Benue</option><option>Borno</option><option>Cross River</option><option>Delta</option><option>Ebonyi</option><option>Edo</option><option>Ekiti</option><option>Enugu</option><option>Federal Capital Territory (Abuja)</option><option>Gombe</option><option>Imo</option><option>Jigawa</option><option>Kaduna</option><option>Kano</option><option>Katsina</option><option>Kebbi</option><option>Kogi</option><option>Kwara</option><option>Lagos</option><option>Nasarawa</option><option>Niger</option><option>Ogun</option><option>Ondo</option><option>Osun</option><option>Oyo</option><option>Plateau</option><option>Rivers</option><option>Sokoto</option><option>Taraba</option><option>Yobe</option><option>Zamfara</option></select></div>
+          </div>
+          <div class="field"><label for="registration-interest">I’m registering as <b>*</b></label><select id="registration-interest" name="interest" required><option value="" selected disabled>Choose one</option><option>Young person</option><option>Mentor or volunteer</option><option>Partner or supporter</option></select></div>
+          <div class="field"><label for="registration-message">What would you like to explore? <b>*</b></label><textarea id="registration-message" name="message" required rows="4" placeholder="Tell us a little about the kind of support, opportunity, or conversation you are looking for."></textarea></div>
+          <label class="consent-field" for="consent"><input id="consent" name="consent" type="checkbox" required /><span>I agree that PWI may contact me about future opportunities and updates.</span></label>
+          <p class="draft-notice">Please do not add sensitive personal information. PWI will only use these details to respond about future opportunities and updates.</p>
+          <p class="form-message" id="registration-message-status" role="status" aria-live="polite"></p>
+          <button class="button button-gold" type="submit">Register your interest <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer"><div class="container footer-inner"><a class="footer-brand" href="index.html#top">Promise Wesley Initiative <span>Grow Forward.</span></a><div class="footer-social" aria-label="Promise Wesley Initiative social links"><p class="footer-label">Find PWI online</p><div class="social-links"><a class="social-link" href="https://linkedin.com/company/promise-wesley-initiative" target="_blank" rel="noreferrer" aria-label="PWI on LinkedIn — opens in a new tab"><img class="social-icon" src="https://cdn.simpleicons.org/linkedin/F5A000" alt="" aria-hidden="true" width="15" height="15" /><span class="social-name">LinkedIn</span><span class="social-arrow" aria-hidden="true">↗</span></a><a class="social-link" href="https://www.facebook.com/share/1Khteg1sDc/" target="_blank" rel="noreferrer" aria-label="PWI on Facebook — opens in a new tab"><img class="social-icon" src="https://cdn.simpleicons.org/facebook/F5A000" alt="" aria-hidden="true" width="15" height="15" /><span class="social-name">Facebook</span><span class="social-arrow" aria-hidden="true">↗</span></a><a class="social-link" href="https://www.instagram.com/promisewesleyinitiative?exln=emd6NTFmcjA2NDRt" target="_blank" rel="noreferrer" aria-label="PWI on Instagram — opens in a new tab"><img class="social-icon" src="https://cdn.simpleicons.org/instagram/F5A000" alt="" aria-hidden="true" width="15" height="15" /><span class="social-name">Instagram</span><span class="social-arrow" aria-hidden="true">↗</span></a><a class="social-link" href="https://www.tiktok.com/@promise.wesley.in?_r=1&amp;_t=ZS-9AkhpwTmJIQ" target="_blank" rel="noreferrer" aria-label="PWI on TikTok — opens in a new tab"><img class="social-icon" src="https://cdn.simpleicons.org/tiktok/F5A000" alt="" aria-hidden="true" width="15" height="15" /><span class="social-name">TikTok</span><span class="social-arrow" aria-hidden="true">↗</span></a><a class="social-link" href="https://x.com/PW_Initiative" target="_blank" rel="noreferrer" aria-label="PWI on X — opens in a new tab"><img class="social-icon" src="https://cdn.simpleicons.org/x/F5A000" alt="" aria-hidden="true" width="15" height="15" /><span class="social-name">X</span><span class="social-arrow" aria-hidden="true">↗</span></a><a class="social-link" href="https://youtube.com/@promisewesleyinitiative?si=YUbobHiWBoMoceSr" target="_blank" rel="noreferrer" aria-label="PWI on YouTube — opens in a new tab"><img class="social-icon" src="https://cdn.simpleicons.org/youtube/F5A000" alt="" aria-hidden="true" width="15" height="15" /><span class="social-name">YouTube</span><span class="social-arrow" aria-hidden="true">↗</span></a><a class="social-link" href="https://wa.me/2348022712478" target="_blank" rel="noreferrer" aria-label="Message PWI on WhatsApp — opens in a new tab"><img class="social-icon" src="https://cdn.simpleicons.org/whatsapp/F5A000" alt="" aria-hidden="true" width="15" height="15" /><span class="social-name">WhatsApp</span><span class="social-arrow" aria-hidden="true">↗</span></a><a class="social-link" href="mailto:Promisewesleyinitiative@gmail.com"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"></rect><path d="m4 7 8 6 8-6"></path></svg><span class="social-name">Email</span><span class="social-arrow" aria-hidden="true">↗</span></a></div></div><p>© <span id="year"></span> PWI. Draft landing page.</p></div></footer>
+    <script src="register-config.js"></script>
+    <script src="register.js"></script>
+  </body>
+</html>
